@@ -1,0 +1,781 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Quentin\\source\\repos\\Cube4-DI23\\Cube4-DI23\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BFE4AB58-0BC0-4514-8C57-AE25D187735B}|Client\\Client.csproj|c:\\users\\quentin\\source\\repos\\cube4-di23\\cube4-di23\\client\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{BFE4AB58-0BC0-4514-8C57-AE25D187735B}|Client\\Client.csproj|solutionrelative:client\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFE4AB58-0BC0-4514-8C57-AE25D187735B}|Client\\Client.csproj|c:\\users\\quentin\\source\\repos\\cube4-di23\\cube4-di23\\client\\viewmodels\\employeedetailviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFE4AB58-0BC0-4514-8C57-AE25D187735B}|Client\\Client.csproj|solutionrelative:client\\viewmodels\\employeedetailviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFE4AB58-0BC0-4514-8C57-AE25D187735B}|Client\\Client.csproj|c:\\users\\quentin\\source\\repos\\cube4-di23\\cube4-di23\\client\\viewmodels\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFE4AB58-0BC0-4514-8C57-AE25D187735B}|Client\\Client.csproj|solutionrelative:client\\viewmodels\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFE4AB58-0BC0-4514-8C57-AE25D187735B}|Client\\Client.csproj|c:\\users\\quentin\\source\\repos\\cube4-di23\\cube4-di23\\client\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFE4AB58-0BC0-4514-8C57-AE25D187735B}|Client\\Client.csproj|solutionrelative:client\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFE4AB58-0BC0-4514-8C57-AE25D187735B}|Client\\Client.csproj|c:\\users\\quentin\\source\\repos\\cube4-di23\\cube4-di23\\client\\viewmodels\\homepageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFE4AB58-0BC0-4514-8C57-AE25D187735B}|Client\\Client.csproj|solutionrelative:client\\viewmodels\\homepageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFE4AB58-0BC0-4514-8C57-AE25D187735B}|Client\\Client.csproj|c:\\users\\quentin\\source\\repos\\cube4-di23\\cube4-di23\\client\\views\\employeedetailcontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{BFE4AB58-0BC0-4514-8C57-AE25D187735B}|Client\\Client.csproj|solutionrelative:client\\views\\employeedetailcontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFE4AB58-0BC0-4514-8C57-AE25D187735B}|Client\\Client.csproj|c:\\users\\quentin\\source\\repos\\cube4-di23\\cube4-di23\\client\\views\\employeedetailcontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFE4AB58-0BC0-4514-8C57-AE25D187735B}|Client\\Client.csproj|solutionrelative:client\\views\\employeedetailcontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFE4AB58-0BC0-4514-8C57-AE25D187735B}|Client\\Client.csproj|c:\\users\\quentin\\source\\repos\\cube4-di23\\cube4-di23\\client\\views\\homepagecontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFE4AB58-0BC0-4514-8C57-AE25D187735B}|Client\\Client.csproj|solutionrelative:client\\views\\homepagecontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFE4AB58-0BC0-4514-8C57-AE25D187735B}|Client\\Client.csproj|c:\\users\\quentin\\source\\repos\\cube4-di23\\cube4-di23\\client\\views\\homepagecontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{BFE4AB58-0BC0-4514-8C57-AE25D187735B}|Client\\Client.csproj|solutionrelative:client\\views\\homepagecontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFE4AB58-0BC0-4514-8C57-AE25D187735B}|Client\\Client.csproj|c:\\users\\quentin\\source\\repos\\cube4-di23\\cube4-di23\\client\\services\\navigationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFE4AB58-0BC0-4514-8C57-AE25D187735B}|Client\\Client.csproj|solutionrelative:client\\services\\navigationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFE4AB58-0BC0-4514-8C57-AE25D187735B}|Client\\Client.csproj|c:\\users\\quentin\\source\\repos\\cube4-di23\\cube4-di23\\client\\services\\departmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFE4AB58-0BC0-4514-8C57-AE25D187735B}|Client\\Client.csproj|solutionrelative:client\\services\\departmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFE4AB58-0BC0-4514-8C57-AE25D187735B}|Client\\Client.csproj|c:\\users\\quentin\\source\\repos\\cube4-di23\\cube4-di23\\client\\services\\siteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFE4AB58-0BC0-4514-8C57-AE25D187735B}|Client\\Client.csproj|solutionrelative:client\\services\\siteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFE4AB58-0BC0-4514-8C57-AE25D187735B}|Client\\Client.csproj|c:\\users\\quentin\\source\\repos\\cube4-di23\\cube4-di23\\client\\utils\\stringtoupperconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFE4AB58-0BC0-4514-8C57-AE25D187735B}|Client\\Client.csproj|solutionrelative:client\\utils\\stringtoupperconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFE4AB58-0BC0-4514-8C57-AE25D187735B}|Client\\Client.csproj|c:\\users\\quentin\\source\\repos\\cube4-di23\\cube4-di23\\client\\services\\loginapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFE4AB58-0BC0-4514-8C57-AE25D187735B}|Client\\Client.csproj|solutionrelative:client\\services\\loginapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFE4AB58-0BC0-4514-8C57-AE25D187735B}|Client\\Client.csproj|c:\\users\\quentin\\source\\repos\\cube4-di23\\cube4-di23\\client\\services\\apiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFE4AB58-0BC0-4514-8C57-AE25D187735B}|Client\\Client.csproj|solutionrelative:client\\services\\apiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDF3815B-DF9C-4669-81B7-728EB70C6D1D}|Model\\Model.csproj|c:\\users\\quentin\\source\\repos\\cube4-di23\\cube4-di23\\model\\context\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDF3815B-DF9C-4669-81B7-728EB70C6D1D}|Model\\Model.csproj|solutionrelative:model\\context\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFE4AB58-0BC0-4514-8C57-AE25D187735B}|Client\\Client.csproj|c:\\users\\quentin\\source\\repos\\cube4-di23\\cube4-di23\\client\\services\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFE4AB58-0BC0-4514-8C57-AE25D187735B}|Client\\Client.csproj|solutionrelative:client\\services\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFE4AB58-0BC0-4514-8C57-AE25D187735B}|Client\\Client.csproj|c:\\users\\quentin\\source\\repos\\cube4-di23\\cube4-di23\\client\\utils\\booleantovisibilityconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFE4AB58-0BC0-4514-8C57-AE25D187735B}|Client\\Client.csproj|solutionrelative:client\\utils\\booleantovisibilityconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36629C8E-5D8D-4D6A-B984-7A255F334F87}|API\\API.csproj|c:\\users\\quentin\\source\\repos\\cube4-di23\\cube4-di23\\api\\controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36629C8E-5D8D-4D6A-B984-7A255F334F87}|API\\API.csproj|solutionrelative:api\\controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36629C8E-5D8D-4D6A-B984-7A255F334F87}|API\\API.csproj|c:\\users\\quentin\\source\\repos\\cube4-di23\\cube4-di23\\api\\services\\departmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36629C8E-5D8D-4D6A-B984-7A255F334F87}|API\\API.csproj|solutionrelative:api\\services\\departmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36629C8E-5D8D-4D6A-B984-7A255F334F87}|API\\API.csproj|c:\\users\\quentin\\source\\repos\\cube4-di23\\cube4-di23\\api\\repositories\\departmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36629C8E-5D8D-4D6A-B984-7A255F334F87}|API\\API.csproj|solutionrelative:api\\repositories\\departmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36629C8E-5D8D-4D6A-B984-7A255F334F87}|API\\API.csproj|c:\\users\\quentin\\source\\repos\\cube4-di23\\cube4-di23\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36629C8E-5D8D-4D6A-B984-7A255F334F87}|API\\API.csproj|solutionrelative:api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36629C8E-5D8D-4D6A-B984-7A255F334F87}|API\\API.csproj|c:\\users\\quentin\\source\\repos\\cube4-di23\\cube4-di23\\api\\services\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36629C8E-5D8D-4D6A-B984-7A255F334F87}|API\\API.csproj|solutionrelative:api\\services\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36629C8E-5D8D-4D6A-B984-7A255F334F87}|API\\API.csproj|c:\\users\\quentin\\source\\repos\\cube4-di23\\cube4-di23\\api\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36629C8E-5D8D-4D6A-B984-7A255F334F87}|API\\API.csproj|solutionrelative:api\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36629C8E-5D8D-4D6A-B984-7A255F334F87}|API\\API.csproj|c:\\users\\quentin\\source\\repos\\cube4-di23\\cube4-di23\\api\\repositories\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36629C8E-5D8D-4D6A-B984-7A255F334F87}|API\\API.csproj|solutionrelative:api\\repositories\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDF3815B-DF9C-4669-81B7-728EB70C6D1D}|Model\\Model.csproj|c:\\users\\quentin\\source\\repos\\cube4-di23\\cube4-di23\\model\\dto\\employeedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDF3815B-DF9C-4669-81B7-728EB70C6D1D}|Model\\Model.csproj|solutionrelative:model\\dto\\employeedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36629C8E-5D8D-4D6A-B984-7A255F334F87}|API\\API.csproj|c:\\users\\quentin\\source\\repos\\cube4-di23\\cube4-di23\\api\\controllers\\sitecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36629C8E-5D8D-4D6A-B984-7A255F334F87}|API\\API.csproj|solutionrelative:api\\controllers\\sitecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36629C8E-5D8D-4D6A-B984-7A255F334F87}|API\\API.csproj|c:\\users\\quentin\\source\\repos\\cube4-di23\\cube4-di23\\api\\services\\siteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36629C8E-5D8D-4D6A-B984-7A255F334F87}|API\\API.csproj|solutionrelative:api\\services\\siteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36629C8E-5D8D-4D6A-B984-7A255F334F87}|API\\API.csproj|c:\\users\\quentin\\source\\repos\\cube4-di23\\cube4-di23\\api\\repositories\\siterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36629C8E-5D8D-4D6A-B984-7A255F334F87}|API\\API.csproj|solutionrelative:api\\repositories\\siterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDF3815B-DF9C-4669-81B7-728EB70C6D1D}|Model\\Model.csproj|c:\\users\\quentin\\source\\repos\\cube4-di23\\cube4-di23\\model\\initdatas\\initseed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDF3815B-DF9C-4669-81B7-728EB70C6D1D}|Model\\Model.csproj|solutionrelative:model\\initdatas\\initseed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDF3815B-DF9C-4669-81B7-728EB70C6D1D}|Model\\Model.csproj|c:\\users\\quentin\\source\\repos\\cube4-di23\\cube4-di23\\model\\model.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{CDF3815B-DF9C-4669-81B7-728EB70C6D1D}|Model\\Model.csproj|solutionrelative:model\\model.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDF3815B-DF9C-4669-81B7-728EB70C6D1D}|Model\\Model.csproj|c:\\users\\quentin\\source\\repos\\cube4-di23\\cube4-di23\\model\\entities\\site.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDF3815B-DF9C-4669-81B7-728EB70C6D1D}|Model\\Model.csproj|solutionrelative:model\\entities\\site.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDF3815B-DF9C-4669-81B7-728EB70C6D1D}|Model\\Model.csproj|c:\\users\\quentin\\source\\repos\\cube4-di23\\cube4-di23\\model\\entities\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDF3815B-DF9C-4669-81B7-728EB70C6D1D}|Model\\Model.csproj|solutionrelative:model\\entities\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDF3815B-DF9C-4669-81B7-728EB70C6D1D}|Model\\Model.csproj|c:\\users\\quentin\\source\\repos\\cube4-di23\\cube4-di23\\model\\entities\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDF3815B-DF9C-4669-81B7-728EB70C6D1D}|Model\\Model.csproj|solutionrelative:model\\entities\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFE4AB58-0BC0-4514-8C57-AE25D187735B}|Client\\Client.csproj|c:\\users\\quentin\\source\\repos\\cube4-di23\\cube4-di23\\client\\utils\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFE4AB58-0BC0-4514-8C57-AE25D187735B}|Client\\Client.csproj|solutionrelative:client\\utils\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDF3815B-DF9C-4669-81B7-728EB70C6D1D}|Model\\Model.csproj|c:\\users\\quentin\\source\\repos\\cube4-di23\\cube4-di23\\model\\dto\\departmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDF3815B-DF9C-4669-81B7-728EB70C6D1D}|Model\\Model.csproj|solutionrelative:model\\dto\\departmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDF3815B-DF9C-4669-81B7-728EB70C6D1D}|Model\\Model.csproj|c:\\users\\quentin\\source\\repos\\cube4-di23\\cube4-di23\\model\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDF3815B-DF9C-4669-81B7-728EB70C6D1D}|Model\\Model.csproj|solutionrelative:model\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDF3815B-DF9C-4669-81B7-728EB70C6D1D}|Model\\Model.csproj|c:\\users\\quentin\\source\\repos\\cube4-di23\\cube4-di23\\model\\dto\\sitedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDF3815B-DF9C-4669-81B7-728EB70C6D1D}|Model\\Model.csproj|solutionrelative:model\\dto\\sitedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFE4AB58-0BC0-4514-8C57-AE25D187735B}|Client\\Client.csproj|c:\\users\\quentin\\source\\repos\\cube4-di23\\cube4-di23\\client\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFE4AB58-0BC0-4514-8C57-AE25D187735B}|Client\\Client.csproj|solutionrelative:client\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFE4AB58-0BC0-4514-8C57-AE25D187735B}|Client\\Client.csproj|c:\\users\\quentin\\source\\repos\\cube4-di23\\cube4-di23\\client\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{BFE4AB58-0BC0-4514-8C57-AE25D187735B}|Client\\Client.csproj|solutionrelative:client\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDF3815B-DF9C-4669-81B7-728EB70C6D1D}|Model\\Model.csproj|c:\\users\\quentin\\source\\repos\\cube4-di23\\cube4-di23\\model\\request\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDF3815B-DF9C-4669-81B7-728EB70C6D1D}|Model\\Model.csproj|solutionrelative:model\\request\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFE4AB58-0BC0-4514-8C57-AE25D187735B}|Client\\Client.csproj|c:\\users\\quentin\\source\\repos\\cube4-di23\\cube4-di23\\client\\client.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{BFE4AB58-0BC0-4514-8C57-AE25D187735B}|Client\\Client.csproj|solutionrelative:client\\client.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDF3815B-DF9C-4669-81B7-728EB70C6D1D}|Model\\Model.csproj|c:\\users\\quentin\\source\\repos\\cube4-di23\\cube4-di23\\model\\migrations\\20250204101653_premi\u00E8re migration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDF3815B-DF9C-4669-81B7-728EB70C6D1D}|Model\\Model.csproj|solutionrelative:model\\migrations\\20250204101653_premi\u00E8re migration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36629C8E-5D8D-4D6A-B984-7A255F334F87}|API\\API.csproj|c:\\users\\quentin\\source\\repos\\cube4-di23\\cube4-di23\\api\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36629C8E-5D8D-4D6A-B984-7A255F334F87}|API\\API.csproj|solutionrelative:api\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36629C8E-5D8D-4D6A-B984-7A255F334F87}|API\\API.csproj|c:\\users\\quentin\\source\\repos\\cube4-di23\\cube4-di23\\api\\api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{36629C8E-5D8D-4D6A-B984-7A255F334F87}|API\\API.csproj|solutionrelative:api\\api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDF3815B-DF9C-4669-81B7-728EB70C6D1D}|Model\\Model.csproj|c:\\users\\quentin\\source\\repos\\cube4-di23\\cube4-di23\\model\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDF3815B-DF9C-4669-81B7-728EB70C6D1D}|Model\\Model.csproj|solutionrelative:model\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDF3815B-DF9C-4669-81B7-728EB70C6D1D}|Model\\Model.csproj|c:\\users\\quentin\\source\\repos\\cube4-di23\\cube4-di23\\model\\migrations\\20250222163227_addallentites.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDF3815B-DF9C-4669-81B7-728EB70C6D1D}|Model\\Model.csproj|solutionrelative:model\\migrations\\20250222163227_addallentites.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 404,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EmployeeDetailControl.xaml",
+              "DocumentMoniker": "C:\\Users\\Quentin\\source\\repos\\Cube4-DI23\\Cube4-DI23\\Client\\Views\\EmployeeDetailControl.xaml",
+              "RelativeDocumentMoniker": "Client\\Views\\EmployeeDetailControl.xaml",
+              "ToolTip": "C:\\Users\\Quentin\\source\\repos\\Cube4-DI23\\Cube4-DI23\\Client\\Views\\EmployeeDetailControl.xaml",
+              "RelativeToolTip": "Client\\Views\\EmployeeDetailControl.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-03T14:18:03.555Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Quentin\\source\\repos\\Cube4-DI23\\Cube4-DI23\\Client\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "Client\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\Quentin\\source\\repos\\Cube4-DI23\\Cube4-DI23\\Client\\MainWindow.xaml",
+              "RelativeToolTip": "Client\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-02-09T19:29:06.385Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "EmployeeDetailControl.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Quentin\\source\\repos\\Cube4-DI23\\Cube4-DI23\\Client\\Views\\EmployeeDetailControl.xaml.cs",
+              "RelativeDocumentMoniker": "Client\\Views\\EmployeeDetailControl.xaml.cs",
+              "ToolTip": "C:\\Users\\Quentin\\source\\repos\\Cube4-DI23\\Cube4-DI23\\Client\\Views\\EmployeeDetailControl.xaml.cs",
+              "RelativeToolTip": "Client\\Views\\EmployeeDetailControl.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T14:18:15.226Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HomePageViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Quentin\\source\\repos\\Cube4-DI23\\Cube4-DI23\\Client\\ViewModels\\HomePageViewModel.cs",
+              "RelativeDocumentMoniker": "Client\\ViewModels\\HomePageViewModel.cs",
+              "ToolTip": "C:\\Users\\Quentin\\source\\repos\\Cube4-DI23\\Cube4-DI23\\Client\\ViewModels\\HomePageViewModel.cs",
+              "RelativeToolTip": "Client\\ViewModels\\HomePageViewModel.cs",
+              "ViewState": "AgIAALEAAAAAAAAAAAAIwNcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T09:15:25.842Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "HomePageControl.xaml",
+              "DocumentMoniker": "C:\\Users\\Quentin\\source\\repos\\Cube4-DI23\\Cube4-DI23\\Client\\Views\\HomePageControl.xaml",
+              "RelativeDocumentMoniker": "Client\\Views\\HomePageControl.xaml",
+              "ToolTip": "C:\\Users\\Quentin\\source\\repos\\Cube4-DI23\\Cube4-DI23\\Client\\Views\\HomePageControl.xaml",
+              "RelativeToolTip": "Client\\Views\\HomePageControl.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-03T14:09:54.303Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "HomePageControl.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Quentin\\source\\repos\\Cube4-DI23\\Cube4-DI23\\Client\\Views\\HomePageControl.xaml.cs",
+              "RelativeDocumentMoniker": "Client\\Views\\HomePageControl.xaml.cs",
+              "ToolTip": "C:\\Users\\Quentin\\source\\repos\\Cube4-DI23\\Cube4-DI23\\Client\\Views\\HomePageControl.xaml.cs",
+              "RelativeToolTip": "Client\\Views\\HomePageControl.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T14:10:05.385Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "NavigationService.cs",
+              "DocumentMoniker": "C:\\Users\\Quentin\\source\\repos\\Cube4-DI23\\Cube4-DI23\\Client\\Services\\NavigationService.cs",
+              "RelativeDocumentMoniker": "Client\\Services\\NavigationService.cs",
+              "ToolTip": "C:\\Users\\Quentin\\source\\repos\\Cube4-DI23\\Cube4-DI23\\Client\\Services\\NavigationService.cs",
+              "RelativeToolTip": "Client\\Services\\NavigationService.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAkwGkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T14:08:41.837Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "SiteService.cs",
+              "DocumentMoniker": "C:\\Users\\Quentin\\source\\repos\\Cube4-DI23\\Cube4-DI23\\Client\\Services\\SiteService.cs",
+              "RelativeDocumentMoniker": "Client\\Services\\SiteService.cs",
+              "ToolTip": "C:\\Users\\Quentin\\source\\repos\\Cube4-DI23\\Cube4-DI23\\Client\\Services\\SiteService.cs",
+              "RelativeToolTip": "Client\\Services\\SiteService.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAiwCgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-07T14:22:47.457Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "DbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Quentin\\source\\repos\\Cube4-DI23\\Cube4-DI23\\Model\\Context\\DbContext.cs",
+              "RelativeDocumentMoniker": "Model\\Context\\DbContext.cs",
+              "ToolTip": "C:\\Users\\Quentin\\source\\repos\\Cube4-DI23\\Cube4-DI23\\Model\\Context\\DbContext.cs",
+              "RelativeToolTip": "Model\\Context\\DbContext.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAawBUAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-31T15:49:34.896Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DepartmentService.cs",
+              "DocumentMoniker": "C:\\Users\\Quentin\\source\\repos\\Cube4-DI23\\Cube4-DI23\\Client\\Services\\DepartmentService.cs",
+              "RelativeDocumentMoniker": "Client\\Services\\DepartmentService.cs",
+              "ToolTip": "C:\\Users\\Quentin\\source\\repos\\Cube4-DI23\\Cube4-DI23\\Client\\Services\\DepartmentService.cs",
+              "RelativeToolTip": "Client\\Services\\DepartmentService.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAA1wCoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T09:17:20.056Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ApiService.cs",
+              "DocumentMoniker": "C:\\Users\\Quentin\\source\\repos\\Cube4-DI23\\Cube4-DI23\\Client\\Services\\ApiService.cs",
+              "RelativeDocumentMoniker": "Client\\Services\\ApiService.cs",
+              "ToolTip": "C:\\Users\\Quentin\\source\\repos\\Cube4-DI23\\Cube4-DI23\\Client\\Services\\ApiService.cs",
+              "RelativeToolTip": "Client\\Services\\ApiService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-07T13:35:27.292Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "StringToUpperConverter.cs",
+              "DocumentMoniker": "C:\\Users\\Quentin\\source\\repos\\Cube4-DI23\\Cube4-DI23\\Client\\Utils\\StringToUpperConverter.cs",
+              "RelativeDocumentMoniker": "Client\\Utils\\StringToUpperConverter.cs",
+              "ToolTip": "C:\\Users\\Quentin\\source\\repos\\Cube4-DI23\\Cube4-DI23\\Client\\Utils\\StringToUpperConverter.cs",
+              "RelativeToolTip": "Client\\Utils\\StringToUpperConverter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T10:24:53.946Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "LoginApiService.cs",
+              "DocumentMoniker": "C:\\Users\\Quentin\\source\\repos\\Cube4-DI23\\Cube4-DI23\\Client\\Services\\LoginApiService.cs",
+              "RelativeDocumentMoniker": "Client\\Services\\LoginApiService.cs",
+              "ToolTip": "C:\\Users\\Quentin\\source\\repos\\Cube4-DI23\\Cube4-DI23\\Client\\Services\\LoginApiService.cs",
+              "RelativeToolTip": "Client\\Services\\LoginApiService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-07T13:47:29.398Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "DepartmentController.cs",
+              "DocumentMoniker": "C:\\Users\\Quentin\\source\\repos\\Cube4-DI23\\Cube4-DI23\\API\\Controllers\\DepartmentController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\DepartmentController.cs",
+              "ToolTip": "C:\\Users\\Quentin\\source\\repos\\Cube4-DI23\\Cube4-DI23\\API\\Controllers\\DepartmentController.cs",
+              "RelativeToolTip": "API\\Controllers\\DepartmentController.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAwwDMAAABaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-01T18:11:57.902Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Quentin\\source\\repos\\Cube4-DI23\\Cube4-DI23\\API\\Program.cs",
+              "RelativeDocumentMoniker": "API\\Program.cs",
+              "ToolTip": "C:\\Users\\Quentin\\source\\repos\\Cube4-DI23\\Cube4-DI23\\API\\Program.cs",
+              "RelativeToolTip": "API\\Program.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAkwBYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-01T16:40:04.876Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "EmployeeService.cs",
+              "DocumentMoniker": "C:\\Users\\Quentin\\source\\repos\\Cube4-DI23\\Cube4-DI23\\Client\\Services\\EmployeeService.cs",
+              "RelativeDocumentMoniker": "Client\\Services\\EmployeeService.cs",
+              "ToolTip": "C:\\Users\\Quentin\\source\\repos\\Cube4-DI23\\Cube4-DI23\\Client\\Services\\EmployeeService.cs",
+              "RelativeToolTip": "Client\\Services\\EmployeeService.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAIwFQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T09:16:46.544Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "DepartmentService.cs",
+              "DocumentMoniker": "C:\\Users\\Quentin\\source\\repos\\Cube4-DI23\\Cube4-DI23\\API\\Services\\DepartmentService.cs",
+              "RelativeDocumentMoniker": "API\\Services\\DepartmentService.cs",
+              "ToolTip": "C:\\Users\\Quentin\\source\\repos\\Cube4-DI23\\Cube4-DI23\\API\\Services\\DepartmentService.cs",
+              "RelativeToolTip": "API\\Services\\DepartmentService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-01T18:18:32.889Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "DepartmentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Quentin\\source\\repos\\Cube4-DI23\\Cube4-DI23\\API\\Repositories\\DepartmentRepository.cs",
+              "RelativeDocumentMoniker": "API\\Repositories\\DepartmentRepository.cs",
+              "ToolTip": "C:\\Users\\Quentin\\source\\repos\\Cube4-DI23\\Cube4-DI23\\API\\Repositories\\DepartmentRepository.cs",
+              "RelativeToolTip": "API\\Repositories\\DepartmentRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-01T18:19:30.151Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "SiteService.cs",
+              "DocumentMoniker": "C:\\Users\\Quentin\\source\\repos\\Cube4-DI23\\Cube4-DI23\\API\\Services\\SiteService.cs",
+              "RelativeDocumentMoniker": "API\\Services\\SiteService.cs",
+              "ToolTip": "C:\\Users\\Quentin\\source\\repos\\Cube4-DI23\\Cube4-DI23\\API\\Services\\SiteService.cs",
+              "RelativeToolTip": "API\\Services\\SiteService.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAkwC8AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T09:39:28.047Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "EmployeeController.cs",
+              "DocumentMoniker": "C:\\Users\\Quentin\\source\\repos\\Cube4-DI23\\Cube4-DI23\\API\\Controllers\\EmployeeController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\EmployeeController.cs",
+              "ToolTip": "C:\\Users\\Quentin\\source\\repos\\Cube4-DI23\\Cube4-DI23\\API\\Controllers\\EmployeeController.cs",
+              "RelativeToolTip": "API\\Controllers\\EmployeeController.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAgwFIAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-01T16:36:00.625Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "BooleanToVisibilityConverter.cs",
+              "DocumentMoniker": "C:\\Users\\Quentin\\source\\repos\\Cube4-DI23\\Cube4-DI23\\Client\\Utils\\BooleanToVisibilityConverter.cs",
+              "RelativeDocumentMoniker": "Client\\Utils\\BooleanToVisibilityConverter.cs",
+              "ToolTip": "C:\\Users\\Quentin\\source\\repos\\Cube4-DI23\\Cube4-DI23\\Client\\Utils\\BooleanToVisibilityConverter.cs",
+              "RelativeToolTip": "Client\\Utils\\BooleanToVisibilityConverter.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-09T18:57:03.504Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "EmployeeService.cs",
+              "DocumentMoniker": "C:\\Users\\Quentin\\source\\repos\\Cube4-DI23\\Cube4-DI23\\API\\Services\\EmployeeService.cs",
+              "RelativeDocumentMoniker": "API\\Services\\EmployeeService.cs",
+              "ToolTip": "C:\\Users\\Quentin\\source\\repos\\Cube4-DI23\\Cube4-DI23\\API\\Services\\EmployeeService.cs",
+              "RelativeToolTip": "API\\Services\\EmployeeService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADwAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-01T16:38:19.234Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "SiteController.cs",
+              "DocumentMoniker": "C:\\Users\\Quentin\\source\\repos\\Cube4-DI23\\Cube4-DI23\\API\\Controllers\\SiteController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\SiteController.cs",
+              "ToolTip": "C:\\Users\\Quentin\\source\\repos\\Cube4-DI23\\Cube4-DI23\\API\\Controllers\\SiteController.cs",
+              "RelativeToolTip": "API\\Controllers\\SiteController.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAAwDEAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T09:36:44.263Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "EmployeeRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Quentin\\source\\repos\\Cube4-DI23\\Cube4-DI23\\API\\Repositories\\EmployeeRepository.cs",
+              "RelativeDocumentMoniker": "API\\Repositories\\EmployeeRepository.cs",
+              "ToolTip": "C:\\Users\\Quentin\\source\\repos\\Cube4-DI23\\Cube4-DI23\\API\\Repositories\\EmployeeRepository.cs",
+              "RelativeToolTip": "API\\Repositories\\EmployeeRepository.cs",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAkwF4AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-01T16:38:45.626Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "EmployeeDto.cs",
+              "DocumentMoniker": "C:\\Users\\Quentin\\source\\repos\\Cube4-DI23\\Cube4-DI23\\Model\\Dto\\EmployeeDto.cs",
+              "RelativeDocumentMoniker": "Model\\Dto\\EmployeeDto.cs",
+              "ToolTip": "C:\\Users\\Quentin\\source\\repos\\Cube4-DI23\\Cube4-DI23\\Model\\Dto\\EmployeeDto.cs",
+              "RelativeToolTip": "Model\\Dto\\EmployeeDto.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAqwAwAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-22T16:00:58.021Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "SiteRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Quentin\\source\\repos\\Cube4-DI23\\Cube4-DI23\\API\\Repositories\\SiteRepository.cs",
+              "RelativeDocumentMoniker": "API\\Repositories\\SiteRepository.cs",
+              "ToolTip": "C:\\Users\\Quentin\\source\\repos\\Cube4-DI23\\Cube4-DI23\\API\\Repositories\\SiteRepository.cs",
+              "RelativeToolTip": "API\\Repositories\\SiteRepository.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAkwB4AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T09:56:05.787Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "InitSeed.cs",
+              "DocumentMoniker": "C:\\Users\\Quentin\\source\\repos\\Cube4-DI23\\Cube4-DI23\\Model\\InitDatas\\InitSeed.cs",
+              "RelativeDocumentMoniker": "Model\\InitDatas\\InitSeed.cs",
+              "ToolTip": "C:\\Users\\Quentin\\source\\repos\\Cube4-DI23\\Cube4-DI23\\Model\\InitDatas\\InitSeed.cs",
+              "RelativeToolTip": "Model\\InitDatas\\InitSeed.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAqwFoAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-23T19:18:11.171Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Department.cs",
+              "DocumentMoniker": "C:\\Users\\Quentin\\source\\repos\\Cube4-DI23\\Cube4-DI23\\Model\\Entities\\Department.cs",
+              "RelativeDocumentMoniker": "Model\\Entities\\Department.cs",
+              "ToolTip": "C:\\Users\\Quentin\\source\\repos\\Cube4-DI23\\Cube4-DI23\\Model\\Entities\\Department.cs",
+              "RelativeToolTip": "Model\\Entities\\Department.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-22T15:58:07.009Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "C:\\Users\\Quentin\\source\\repos\\Cube4-DI23\\Cube4-DI23\\Model\\Entities\\Employee.cs",
+              "RelativeDocumentMoniker": "Model\\Entities\\Employee.cs",
+              "ToolTip": "C:\\Users\\Quentin\\source\\repos\\Cube4-DI23\\Cube4-DI23\\Model\\Entities\\Employee.cs",
+              "RelativeToolTip": "Model\\Entities\\Employee.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAkwBwAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-22T15:58:42.144Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Model.csproj",
+              "DocumentMoniker": "C:\\Users\\Quentin\\source\\repos\\Cube4-DI23\\Cube4-DI23\\Model\\Model.csproj",
+              "RelativeDocumentMoniker": "Model\\Model.csproj",
+              "ToolTip": "C:\\Users\\Quentin\\source\\repos\\Cube4-DI23\\Cube4-DI23\\Model\\Model.csproj",
+              "RelativeToolTip": "Model\\Model.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-02-04T09:30:53.553Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "DepartmentDto.cs",
+              "DocumentMoniker": "C:\\Users\\Quentin\\source\\repos\\Cube4-DI23\\Cube4-DI23\\Model\\Dto\\DepartmentDto.cs",
+              "RelativeDocumentMoniker": "Model\\Dto\\DepartmentDto.cs",
+              "ToolTip": "C:\\Users\\Quentin\\source\\repos\\Cube4-DI23\\Cube4-DI23\\Model\\Dto\\DepartmentDto.cs",
+              "RelativeToolTip": "Model\\Dto\\DepartmentDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-22T16:00:30.567Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "20250222163227_AddAllEntites.cs",
+              "DocumentMoniker": "C:\\Users\\Quentin\\source\\repos\\Cube4-DI23\\Cube4-DI23\\Model\\Migrations\\20250222163227_AddAllEntites.cs",
+              "RelativeDocumentMoniker": "Model\\Migrations\\20250222163227_AddAllEntites.cs",
+              "ToolTip": "C:\\Users\\Quentin\\source\\repos\\Cube4-DI23\\Cube4-DI23\\Model\\Migrations\\20250222163227_AddAllEntites.cs",
+              "RelativeToolTip": "Model\\Migrations\\20250222163227_AddAllEntites.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-22T16:32:27.561Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\Quentin\\source\\repos\\Cube4-DI23\\Cube4-DI23\\Model\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "Model\\Entities\\User.cs",
+              "ToolTip": "C:\\Users\\Quentin\\source\\repos\\Cube4-DI23\\Cube4-DI23\\Model\\Entities\\User.cs",
+              "RelativeToolTip": "Model\\Entities\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-31T15:52:21.646Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "SiteDto.cs",
+              "DocumentMoniker": "C:\\Users\\Quentin\\source\\repos\\Cube4-DI23\\Cube4-DI23\\Model\\Dto\\SiteDto.cs",
+              "RelativeDocumentMoniker": "Model\\Dto\\SiteDto.cs",
+              "ToolTip": "C:\\Users\\Quentin\\source\\repos\\Cube4-DI23\\Cube4-DI23\\Model\\Dto\\SiteDto.cs",
+              "RelativeToolTip": "Model\\Dto\\SiteDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T09:31:23.37Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "AssemblyInfo.cs",
+              "DocumentMoniker": "C:\\Users\\Quentin\\source\\repos\\Cube4-DI23\\Cube4-DI23\\Client\\AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "Client\\AssemblyInfo.cs",
+              "ToolTip": "C:\\Users\\Quentin\\source\\repos\\Cube4-DI23\\Cube4-DI23\\Client\\AssemblyInfo.cs",
+              "RelativeToolTip": "Client\\AssemblyInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-09T19:27:23.286Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\Quentin\\source\\repos\\Cube4-DI23\\Cube4-DI23\\Client\\App.xaml",
+              "RelativeDocumentMoniker": "Client\\App.xaml",
+              "ToolTip": "C:\\Users\\Quentin\\source\\repos\\Cube4-DI23\\Cube4-DI23\\Client\\App.xaml",
+              "RelativeToolTip": "Client\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-02-09T19:21:34.511Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "LoginRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Quentin\\source\\repos\\Cube4-DI23\\Cube4-DI23\\Model\\Request\\LoginRequest.cs",
+              "RelativeDocumentMoniker": "Model\\Request\\LoginRequest.cs",
+              "ToolTip": "C:\\Users\\Quentin\\source\\repos\\Cube4-DI23\\Cube4-DI23\\Model\\Request\\LoginRequest.cs",
+              "RelativeToolTip": "Model\\Request\\LoginRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-07T14:01:23.4Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "Client.csproj",
+              "DocumentMoniker": "C:\\Users\\Quentin\\source\\repos\\Cube4-DI23\\Cube4-DI23\\Client\\Client.csproj",
+              "RelativeDocumentMoniker": "Client\\Client.csproj",
+              "ToolTip": "C:\\Users\\Quentin\\source\\repos\\Cube4-DI23\\Cube4-DI23\\Client\\Client.csproj",
+              "RelativeToolTip": "Client\\Client.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-02-07T13:21:14.965Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "WeatherForecast.cs",
+              "DocumentMoniker": "C:\\Users\\Quentin\\source\\repos\\Cube4-DI23\\Cube4-DI23\\API\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "API\\WeatherForecast.cs",
+              "ToolTip": "C:\\Users\\Quentin\\source\\repos\\Cube4-DI23\\Cube4-DI23\\API\\WeatherForecast.cs",
+              "RelativeToolTip": "API\\WeatherForecast.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T10:16:37.799Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "20250204101653_Premi\u00E8re migration.cs",
+              "DocumentMoniker": "C:\\Users\\Quentin\\source\\repos\\Cube4-DI23\\Cube4-DI23\\Model\\Migrations\\20250204101653_Premi\u00E8re migration.cs",
+              "RelativeDocumentMoniker": "Model\\Migrations\\20250204101653_Premi\u00E8re migration.cs",
+              "ToolTip": "C:\\Users\\Quentin\\source\\repos\\Cube4-DI23\\Cube4-DI23\\Model\\Migrations\\20250204101653_Premi\u00E8re migration.cs",
+              "RelativeToolTip": "Model\\Migrations\\20250204101653_Premi\u00E8re migration.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T10:16:54.058Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "API.csproj",
+              "DocumentMoniker": "C:\\Users\\Quentin\\source\\repos\\Cube4-DI23\\Cube4-DI23\\API\\API.csproj",
+              "RelativeDocumentMoniker": "API\\API.csproj",
+              "ToolTip": "C:\\Users\\Quentin\\source\\repos\\Cube4-DI23\\Cube4-DI23\\API\\API.csproj",
+              "RelativeToolTip": "API\\API.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-02-04T09:33:43.416Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\Quentin\\source\\repos\\Cube4-DI23\\Cube4-DI23\\Model\\Class1.cs",
+              "RelativeDocumentMoniker": "Model\\Class1.cs",
+              "ToolTip": "C:\\Users\\Quentin\\source\\repos\\Cube4-DI23\\Cube4-DI23\\Model\\Class1.cs",
+              "RelativeToolTip": "Model\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-31T15:29:04.601Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 324,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainWindowViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Quentin\\source\\repos\\Cube4-DI23\\Cube4-DI23\\Client\\ViewModels\\MainWindowViewModel.cs",
+              "RelativeDocumentMoniker": "Client\\ViewModels\\MainWindowViewModel.cs",
+              "ToolTip": "C:\\Users\\Quentin\\source\\repos\\Cube4-DI23\\Cube4-DI23\\Client\\ViewModels\\MainWindowViewModel.cs",
+              "RelativeToolTip": "Client\\ViewModels\\MainWindowViewModel.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAIwE8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-09T18:33:11.732Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EmployeeDetailViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Quentin\\source\\repos\\Cube4-DI23\\Cube4-DI23\\Client\\ViewModels\\EmployeeDetailViewModel.cs",
+              "RelativeDocumentMoniker": "Client\\ViewModels\\EmployeeDetailViewModel.cs",
+              "ToolTip": "C:\\Users\\Quentin\\source\\repos\\Cube4-DI23\\Cube4-DI23\\Client\\ViewModels\\EmployeeDetailViewModel.cs",
+              "RelativeToolTip": "Client\\ViewModels\\EmployeeDetailViewModel.cs",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAAwGAAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T13:18:55.618Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Quentin\\source\\repos\\Cube4-DI23\\Cube4-DI23\\Client\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Client\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Quentin\\source\\repos\\Cube4-DI23\\Cube4-DI23\\Client\\MainWindow.xaml.cs",
+              "RelativeToolTip": "Client\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAIwDEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-07T10:18:32.635Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Site.cs",
+              "DocumentMoniker": "C:\\Users\\Quentin\\source\\repos\\Cube4-DI23\\Cube4-DI23\\Model\\Entities\\Site.cs",
+              "RelativeDocumentMoniker": "Model\\Entities\\Site.cs",
+              "ToolTip": "C:\\Users\\Quentin\\source\\repos\\Cube4-DI23\\Cube4-DI23\\Model\\Entities\\Site.cs",
+              "RelativeToolTip": "Model\\Entities\\Site.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T09:01:50.127Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "RelayCommand.cs",
+              "DocumentMoniker": "C:\\Users\\Quentin\\source\\repos\\Cube4-DI23\\Cube4-DI23\\Client\\Utils\\RelayCommand.cs",
+              "RelativeDocumentMoniker": "Client\\Utils\\RelayCommand.cs",
+              "ToolTip": "C:\\Users\\Quentin\\source\\repos\\Cube4-DI23\\Cube4-DI23\\Client\\Utils\\RelayCommand.cs",
+              "RelativeToolTip": "Client\\Utils\\RelayCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-09T19:47:59.121Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
