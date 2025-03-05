@@ -1,0 +1,19 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <!-- Fusion des autres fichiers -->
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="Colors.xaml"/>
+        <ResourceDictionary Source="Components/ButtonAddStyle.xaml"/>
+        <ResourceDictionary Source="Components/CustomDatePickerStyle.xaml"/>
+        <ResourceDictionary Source="Components/CustomSelectorStyle.xaml"/>
+        <ResourceDictionary Source="Components/CustomTitleStyle.xaml"/>
+        <ResourceDictionary Source="Components/CustomScrollBarStyle.xaml"/>
+        <ResourceDictionary Source="Components/NavBarStyle.xaml"/>
+        <ResourceDictionary Source="Components/PurchasesStyle.xaml"/>
+        <ResourceDictionary Source="Components/DataGridStyle.xaml"/>
+        <ResourceDictionary Source="Components/PriceIndicatorsStyle.xaml"/>
+        <ResourceDictionary Source="Components/ButtonValidateStyle.xaml"/>
+        <ResourceDictionary Source="Components/ToggleStyle.xaml"/>
+        <ResourceDictionary Source="Components/CustomInputStyle.xaml"/>
+    </ResourceDictionary.MergedDictionaries>
+</ResourceDictionary>

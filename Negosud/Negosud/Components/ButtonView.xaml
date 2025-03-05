@@ -1,0 +1,48 @@
+﻿<UserControl x:Class="Negosud.Components.ButtonView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             mc:Ignorable="d"
+             d:DesignHeight="40" d:DesignWidth="40">
+    <Grid>
+        <Button ToolTip="Voir"
+                Command="{Binding NavigateCommand, RelativeSource={RelativeSource AncestorType=UserControl}}"
+                CommandParameter="{Binding CommandParameter, RelativeSource={RelativeSource AncestorType=UserControl}}"
+                Cursor="Hand"
+                Width="35" Height="35"
+                VerticalAlignment="Center"
+                Background="Transparent"
+                BorderThickness="0">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Grid Background="Transparent">
+                        <Viewbox Width="27" Height="27" Margin="-2,-1,0,4" HorizontalAlignment="Center" VerticalAlignment="Center">
+                            <Grid>
+                                <Grid.Effect>
+                                    <DropShadowEffect BlurRadius="1" 
+                                             ShadowDepth="0" 
+                                             Opacity="0.6" 
+                                             Color="Black"/>
+                                </Grid.Effect>
+                                <Path Data="M3.39339 20.5367C3.27837 20.191 3.27837 19.8173 3.39339 19.4717C5.70506 12.5167 12.2667 7.5 20.0001 7.5C27.7301 7.5 34.2884 12.5117 36.6051 19.4633C36.7217 19.8083 36.7217 20.1817 36.6051 20.5283C34.2951 27.4833 27.7334 32.5 20.0001 32.5C12.2701 32.5 5.71006 27.4883 3.39339 20.5367Z"
+                                      Stroke="{DynamicResource UnderlineColor}"
+                                      StrokeThickness="1.5"
+                                      StrokeStartLineCap="Round"
+                                      StrokeEndLineCap="Round"
+                                      StrokeLineJoin="Round" />
+
+                                <Path Data="M25 20C25 21.3261 24.4732 22.5979 23.5355 23.5355C22.5979 24.4732 21.3261 25 20 25C18.6739 25 17.4021 24.4732 16.4645 23.5355C15.5268 22.5979 15 21.3261 15 20C15 18.6739 15.5268 17.4021 16.4645 16.4645C17.4021 15.5268 18.6739 15 20 15C21.3261 15 22.5979 15.5268 23.5355 16.4645C24.4732 17.4021 25 18.6739 25 20Z"
+                                      Stroke="{DynamicResource UnderlineColor}"
+                                      StrokeThickness="1.5"
+                                      StrokeStartLineCap="Round"
+                                      StrokeEndLineCap="Round"
+                                      StrokeLineJoin="Round" />
+                            </Grid>
+                        </Viewbox>
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+    </Grid>
+</UserControl>

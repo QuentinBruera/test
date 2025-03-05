@@ -1,0 +1,215 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- Style pour l'entête du DataGrid -->
+    <Style x:Key="CustomDataGridHeaderStyle" TargetType="DataGridColumnHeader">
+        <Setter Property="Background" Value="{DynamicResource HeaderColor}"/>
+        <Setter Property="Foreground" Value="Black"/>
+        <Setter Property="FontWeight" Value="SemiBold"/>
+        <Setter Property="FontSize" Value="22"/>
+        <Setter Property="Height" Value="50"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="DataGridColumnHeader">
+                    <Border Background="{TemplateBinding Background}"
+                            BorderThickness="0"
+                            CornerRadius="10,10,0,0">
+                        <ContentPresenter HorizontalAlignment="Left"
+                                          VerticalAlignment="Center"
+                                          Margin="20,0,10,0"
+                                          />
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!-- Style pour le DataGrid -->
+    <Style x:Key="CustomDataGridStyle" TargetType="DataGrid">
+        <!-- Conserve tes setters existants -->
+        <Setter Property="Background" Value="{DynamicResource ListBgColor}"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="ColumnHeaderStyle" Value="{StaticResource CustomDataGridHeaderStyle}"/>
+        <Setter Property="RowBackground" Value="{DynamicResource PrimaryItemColor}"/>
+        <Setter Property="AlternatingRowBackground" Value="{DynamicResource SecondaryItemColor}"/>
+        <Setter Property="GridLinesVisibility" Value="None"/>
+        <Setter Property="FontSize" Value="18"/>
+        <Setter Property="RowHeight" Value="40"/>
+        <Setter Property="Effect">
+            <Setter.Value>
+                <DropShadowEffect BlurRadius="5" Color="#861432" ShadowDepth="2"/>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+    <!-- Style pour les lignes -->
+    <Style x:Key="CustomDataGridRowStyle" TargetType="DataGridRow">
+        <!-- Row spacing and minimal height -->
+        <Setter Property="Margin" Value="10,5,0,5" />
+        <Setter Property="Height" Value="Auto" />
+        <Setter Property="MinHeight" Value="50"/>
+
+        <!-- Default background, borders, etc. -->
+        <Setter Property="Background" Value="White"/>
+        <Setter Property="BorderBrush" Value="Transparent"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
+        <Setter Property="IsTabStop" Value="False"/>
+        <Setter Property="SnapsToDevicePixels" Value="True"/>
+
+        <!-- Row Template -->
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="DataGridRow">
+                    <!-- A Border that surrounds each row -->
+                    <Border x:Name="RowBorder"
+                            CornerRadius="8"
+                            Background="{TemplateBinding Background}"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="0"
+                            SnapsToDevicePixels="True"
+                            >
+
+                        <!-- Ajout de l'effet d'ombre -->
+                        <Border.Effect>
+                            <DropShadowEffect BlurRadius="5" Color="#86000000" ShadowDepth="2" Opacity="0.2" Direction="270"/>
+                        </Border.Effect>
+
+                        <!-- 
+                            The SelectiveScrollingGrid hosts the row's cells 
+                            (DataGridCellsPresenter) and the details area (DataGridDetailsPresenter).
+                        -->
+                        <SelectiveScrollingGrid>
+                            <SelectiveScrollingGrid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="*" />
+                            </SelectiveScrollingGrid.ColumnDefinitions>
+                            <SelectiveScrollingGrid.RowDefinitions>
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="Auto" />
+                            </SelectiveScrollingGrid.RowDefinitions>
+
+                            <!-- Cells of the row -->
+                            <DataGridCellsPresenter 
+                                Grid.ColumnSpan="1"
+                                SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" />
+
+                            <!-- RowDetails, if enabled -->
+                            <DataGridDetailsPresenter
+                                Grid.ColumnSpan="2"
+                                Grid.Row="1"
+                                Visibility="{TemplateBinding DetailsVisibility}"
+                                SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" />
+                        </SelectiveScrollingGrid>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+
+        <!-- Triggers for selection and mouse hover -->
+        <Style.Triggers>
+            <!-- When the row is selected -->
+            <Trigger Property="IsSelected" Value="True">
+                <Setter Property="Background" Value="#FFF0E2"/>
+                <Setter Property="BorderBrush" Value="#FFC07F"/>
+            </Trigger>
+
+            <!-- When the mouse is over a row -->
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background" Value="#F6F5F4"/>
+                <Setter Property="BorderBrush" Value="#DDD"/>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <!-- Style pour les cellules -->
+    <Style x:Key="CustomDataGridCellStyle" TargetType="DataGridCell">
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
+        <Setter Property="Padding" Value="10.5"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Style.Triggers>
+            <Trigger Property="IsSelected" Value="True">
+                <Setter Property="Background" Value="Transparent"/>
+                <Setter Property="Foreground" Value="Black"/>
+                <Setter Property="BorderBrush" Value="Transparent"/>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <!-- Style pour les inputs -->
+    <Style x:Key="RoundedTextBoxStyle" TargetType="TextBox">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="TextBox">
+                    <Border Background="{TemplateBinding Background}" 
+                            BorderBrush="{TemplateBinding BorderBrush}" 
+                            BorderThickness="1"
+                            CornerRadius="5">
+                        <ScrollViewer Margin="2" x:Name="PART_ContentHost"/>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Padding" Value="2,0,0,0"/>
+        <Setter Property="Background" Value="White"/>
+        <Setter Property="BorderBrush" Value="#CCC"/>
+        <Setter Property="Width" Value="120"/>
+        <Setter Property="Height" Value="30"/>
+        <Setter Property="HorizontalAlignment" Value="Left"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+    </Style>
+
+    <Style x:Key="CustomScrollViewerStyle" TargetType="ScrollViewer">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="ScrollViewer">
+                    <Grid>
+                        <!-- 2 colonnes : le contenu à gauche, la scrollbar verticale à droite -->
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <!-- 2 lignes : le contenu en haut, la scrollbar horizontale en bas -->
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+
+                        <!-- Le contenu défilable -->
+                        <ScrollContentPresenter x:Name="PART_ScrollContentPresenter"
+                                            Grid.Column="0"
+                                            Grid.Row="0" />
+
+                        <!-- Barre de défilement verticale -->
+                        <ScrollBar x:Name="PART_VerticalScrollBar"
+                               Grid.Column="1"
+                               Grid.Row="0"
+                               Orientation="Vertical"
+                               Value="{TemplateBinding VerticalOffset}"
+                               Maximum="{TemplateBinding ScrollableHeight}"
+                               ViewportSize="{TemplateBinding ViewportHeight}"
+                               Visibility="{TemplateBinding ComputedVerticalScrollBarVisibility}"
+                               Style="{StaticResource CustomScrollBarStyle}" />
+
+                        <!-- Barre de défilement horizontale -->
+                        <ScrollBar x:Name="PART_HorizontalScrollBar"
+                               Grid.Column="0"
+                               Grid.Row="1"
+                               Orientation="Horizontal"
+                               Value="{TemplateBinding HorizontalOffset}"
+                               Maximum="{TemplateBinding ScrollableWidth}"
+                               ViewportSize="{TemplateBinding ViewportWidth}"
+                               Visibility="{TemplateBinding ComputedHorizontalScrollBarVisibility}"
+                               Style="{StaticResource CustomScrollBarStyle}" />
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+</ResourceDictionary>

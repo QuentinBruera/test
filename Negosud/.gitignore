@@ -1,0 +1,45 @@
+Fichiers de build
+bin/
+obj/
+
+Packages NuGet
+*.nupkg
+*.snupkg
+packages/
+!packages/build/
+
+Fichiers de configuration de l'utilisateur
+*.user
+*.vs/
+.vscode/
+
+Configuration des tests
+TestResults/
+*.trx
+
+Logs et fichiers temporaires
+*.log
+*.tlog
+*.tmp
+*.pdb
+*.cache
+*.orig
+*.class
+
+Fichiers de base de données locales
+*.mdf
+*.ldf
+
+Backup et fichiers d'édition
+*.bak
+*.swp
+*.swo
+*.sln.docstates
+
+Secrets sensibles (optionnel)
+secrets.json
+.env
+
+Fichiers système
+Thumbs.db
+desktop.ini

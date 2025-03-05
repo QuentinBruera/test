@@ -1,0 +1,29 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- Toggle Off Icon -->
+    <DataTemplate x:Key="ToggleOffIcon">
+        <Viewbox Width="30" Height="30">
+            <Canvas Width="30" Height="30">
+                <Path Data="M12.1875 12.1875L17.8125 17.8125L12.1875 12.1875ZM17.8125 12.1875L12.1875 17.8125L17.8125 12.1875ZM26.25 15C26.25 16.4774 25.959 17.9403 25.3936 19.3052C24.8283 20.6701 23.9996 21.9103 22.955 22.955C21.9103 23.9996 20.6701 24.8283 19.3052 25.3936C17.9403 25.959 16.4774 26.25 15 26.25C13.5226 26.25 12.0597 25.959 10.6948 25.3936C9.3299 24.8283 8.08971 23.9996 7.04505 22.955C6.00039 21.9103 5.17172 20.6701 4.60636 19.3052C4.04099 17.9403 3.75 16.4774 3.75 15C3.75 12.0163 4.93526 9.15483 7.04505 7.04505C9.15483 4.93526 12.0163 3.75 15 3.75C17.9837 3.75 20.8452 4.93526 22.955 7.04505C25.0647 9.15483 26.25 12.0163 26.25 15Z"
+                      Fill="{DynamicResource ToggleOffBg}" 
+                      Stroke="{DynamicResource ToggleOffStroke}" 
+                      StrokeThickness="1.5" 
+                      StrokeLineJoin="Round" />
+            </Canvas>
+        </Viewbox>
+    </DataTemplate>
+
+    <!-- Toggle On Icon -->
+    <DataTemplate x:Key="ToggleOnIcon">
+        <Viewbox Width="30" Height="30">
+            <Canvas Width="30" Height="30">
+                <Path Data="M11.3944 15.9375L14.2203 18.75L18.9303 12.1875M26.4663 15C26.4663 16.4774 26.1739 17.9403 25.6058 19.3052C25.0377 20.6701 24.2051 21.9103 23.1554 22.955C22.1058 23.9996 20.8596 24.8283 19.4882 25.3936C18.1167 25.959 16.6468 26.25 15.1623 26.25C13.6779 26.25 12.208 25.959 10.8365 25.3936C9.46505 24.8283 8.21891 23.9996 7.16925 22.955C6.11958 21.9103 5.28694 20.6701 4.71886 19.3052C4.15078 17.9403 3.8584 16.4774 3.8584 15C3.8584 12.0163 5.04935 9.15483 7.16925 7.04505C9.28915 4.93526 12.1643 3.75 15.1623 3.75C18.1603 3.75 21.0355 4.93526 23.1554 7.04505C25.2753 9.15483 26.4663 12.0163 26.4663 15Z"
+                      Fill="{DynamicResource ToggleOffBg}" 
+                      Stroke="{DynamicResource MainBackgroundColor}" 
+                      StrokeThickness="1.5" 
+                      StrokeLineJoin="Round" />
+            </Canvas>
+        </Viewbox>
+    </DataTemplate>
+</ResourceDictionary>

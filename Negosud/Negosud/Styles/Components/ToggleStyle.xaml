@@ -1,0 +1,57 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Style TargetType="ToggleButton" x:Key="ToggleStyle">
+        <Setter Property="Width" Value="60" />
+        <Setter Property="Height" Value="30" />
+        <Setter Property="Background" Value="{DynamicResource ToggleOffBg}" />
+        <Setter Property="BorderBrush" Value="Transparent" />
+        <Setter Property="BorderThickness" Value="0" />
+        <Setter Property="Cursor" Value="Hand" />
+
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="ToggleButton">
+                    <Grid>
+                        <!-- Toggle Background -->
+                        <Border x:Name="ToggleBackground"
+                                Width="50"
+                                Height="20"
+                                CornerRadius="10"
+                                Background="{TemplateBinding Background}" />
+
+                        <!-- Toggle Circle -->
+                        <Grid x:Name="ToggleCircleGrid" Width="30" Height="30" HorizontalAlignment="Left">
+                            <Ellipse x:Name="ToggleCircle"
+                                     Width="20"
+                                     Height="20"
+                                     Fill="{DynamicResource ToggleOffBg}" />
+
+                            <!-- Toggle Icon -->
+                            <ContentControl x:Name="ToggleIcon"
+                                            Width="30"
+                                            Height="30"
+                                            ContentTemplate="{StaticResource ToggleOffIcon}" />
+                        </Grid>
+                    </Grid>
+
+                    <ControlTemplate.Triggers>
+                        <!-- When Toggle is Checked -->
+                        <Trigger Property="IsChecked" Value="True">
+                            <Setter TargetName="ToggleBackground" Property="Background" Value="{DynamicResource MainBackgroundColor80}" />
+                            <Setter TargetName="ToggleCircleGrid" Property="HorizontalAlignment" Value="Right" />
+                            <Setter TargetName="ToggleIcon" Property="ContentTemplate" Value="{StaticResource ToggleOnIcon}" />
+                        </Trigger>
+
+                        <!-- When Toggle is Unchecked -->
+                        <Trigger Property="IsChecked" Value="False">
+                            <Setter TargetName="ToggleBackground" Property="Background" Value="{DynamicResource ToggleOffBg}" />
+                            <Setter TargetName="ToggleCircleGrid" Property="HorizontalAlignment" Value="Left" />
+                            <Setter TargetName="ToggleIcon" Property="ContentTemplate" Value="{StaticResource ToggleOffIcon}" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

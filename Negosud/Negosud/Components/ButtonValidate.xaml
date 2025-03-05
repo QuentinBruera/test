@@ -1,0 +1,16 @@
+﻿<UserControl x:Class="Negosud.Components.ButtonValidate"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Grid>
+        <Button ToolTip="Valider" Style="{StaticResource ButtonValidateStyle}"
+        Command="{Binding Command, RelativeSource={RelativeSource AncestorType=UserControl}}"
+        CommandParameter="{Binding CommandParameter, RelativeSource={RelativeSource AncestorType=UserControl}}">
+            <Viewbox Width="24" Height="24" VerticalAlignment="Center" HorizontalAlignment="Center">
+                <Grid Margin="0,-3,0,0">
+                    <Ellipse Fill="Transparent" />
+                    <Path Data="M2 10L6 14L14 4" Stroke="White" StrokeThickness="1" />
+                </Grid>
+            </Viewbox>
+        </Button>
+    </Grid>
+</UserControl>

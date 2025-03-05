@@ -1,0 +1,241 @@
+﻿@page "/"
+@rendermode InteractiveServer
+
+@using NegosudWeb.Services
+@using NegosudModel.Dto
+
+@inject NavigationManager Navigation
+@inject ApiService ApiService
+@inject ArticleService ArticleService
+@inject FamilyService FamilyService
+@inject SupplierService SupplierService
+@inject CartService CartService
+@inject IJSRuntime JSRuntime
+
+<PageTitle>Catalogue</PageTitle>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="filters">
+            <div class="filters-mb">
+                <div class="col">
+                    <input type="text" class="search" placeholder="Rechercher..."
+                           @oninput="UpdateSearchFilter" />
+                </div>
+            </div>
+            <div class="filters-withoutSearch">
+                <div class="filters-mb">
+                    <h5 class="title">Familles</h5>
+                    @if (families is null)
+                    {
+                        <p><em>Chargement en cours...</em></p>
+                    }
+                    else if (!families.Any())
+                    {
+                        <p>Aucun article trouvé.</p>
+                    }
+                    else
+                    {
+                        @foreach (var family in families)
+                        {
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="@family.Id"
+                                       @onchange="() => ToggleFamilyFilter(family.Id)"
+                                       checked="@selectedFamilyIds.Contains(family.Id)">
+                                <label class="form-check-label">
+                                    @family.Name
+                                </label>
+                            </div>
+                        }
+                    }
+                </div>
+                <div class="filters-mb">
+                    <h5 class="title">Fournisseurs</h5>
+                    @if (suppliers is null)
+                    {
+                        <p><em>Chargement en cours...</em></p>
+                    }
+                    else if (!suppliers.Any())
+                    {
+                        <p>Aucun article trouvé.</p>
+                    }
+                    else
+                    {
+                        @foreach (var supplier in suppliers)
+                        {
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="@supplier.Id"
+                                       @onchange="() => ToggleSupplierFilter(supplier.Id)"
+                                       checked="@selectedSupplierIds.Contains(supplier.Id)">
+                                <label class="form-check-label">
+                                    @supplier.Name
+                                </label>
+                            </div>
+                        }
+                    }
+                </div>
+                <div>
+                    <h5 class="title">Trier par prix</h5>
+                    <select class="sortPrice" @onchange="UpdatePriceSorting">
+                        <option value=""></option>
+                        <option value="asc">Croissant</option>
+                        <option value="desc">Décroissant</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-10 card-container">
+            <div class="row">
+                @if (articles is null)
+                {
+                    <p><em>Chargement en cours...</em></p>
+                }
+                else if (!articles.Any())
+                {
+                    <p>Aucun article trouvé.</p>
+                }
+                else
+                {
+                    foreach (var article in articles)
+                    {
+                        <div class="col-md-2 mb-4">
+                            <div class="card card-custom">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between">
+                                        <h5 class="title">@article.Name</h5>
+                                        @if (itemsInCart.ContainsKey(article.Id) && itemsInCart[article.Id])
+                                        {
+                                            <i class="bi bi-cart-check text-success mx-2"></i>
+                                        }
+                                    </div>
+                                    <p class="card-text">@($"{CartService.GetUnitPriceTTC(article):F2}") € TTC</p>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="btn btn-buy" @onclick="() => Buy(article)">Acheter</button>
+                                    <button class="btn btn-details" @onclick="() => Details(article)">Voir</button>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    private IEnumerable<ArticleDetailsDto>? articles;
+    private IEnumerable<FamilyDto>? families;
+    private IEnumerable<SupplierDto>? suppliers;
+    private List<int> selectedFamilyIds = new List<int>();
+    private List<int> selectedSupplierIds = new List<int>();
+    private string searchText = "";
+    private string priceSortDirection = "";
+    private Dictionary<int, bool> itemsInCart = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            // Si pas déjà connecté, on se loggue avec le compte admin
+            if (!ApiService.IsLoggedIn)
+            {
+                await ApiService.Login("admin@gmail.com", "Admin1!");
+            }
+
+            // Ensuite on récupère les articles, les familles et les fournisseurs
+            var loadedArticles = await ArticleService.GetArticlesDetailsAsync();
+            articles = loadedArticles.OrderBy(a => a.FamilyId).ToList();
+            families = await FamilyService.GetFamiliesAsync();
+            suppliers = await SupplierService.GetSuppliersAsync();
+            await ApplyFilters();
+
+            foreach (var article in articles)
+            {
+                itemsInCart[article.Id] = CartService.IsInCart(article.Id);
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Erreur dans Home : {ex.Message}");
+            articles = Array.Empty<ArticleDetailsDto>();
+        }
+    }
+
+    private void Buy(ArticleDetailsDto article)
+    {
+        CartService.AddToCart(article, 1);
+        itemsInCart[article.Id] = true;
+    }
+
+    private void Details(ArticleDetailsDto article)
+    {
+        Navigation.NavigateTo($"/detail/{article.Id}");
+    }
+
+    private async Task ApplyFilters()
+    {
+        var filteredArticles = await ArticleService.GetArticlesDetailsAsync();
+
+        if (selectedFamilyIds.Any())
+            filteredArticles = filteredArticles.Where(a => selectedFamilyIds.Contains(a.FamilyId));
+
+        if (selectedSupplierIds.Any())
+            filteredArticles = filteredArticles.Where(a => selectedSupplierIds.Contains(a.SupplierId));
+
+        if (!string.IsNullOrEmpty(priceSortDirection))
+        {
+            filteredArticles = priceSortDirection == "asc"
+                ? filteredArticles.OrderBy(a => a.UnitPrice)
+                : filteredArticles.OrderByDescending(a => a.UnitPrice);
+        }
+
+        if (!string.IsNullOrEmpty(searchText))
+           filteredArticles = filteredArticles.Where(a => a.Name.ToLower().Contains(searchText.ToLower()));
+
+        articles = filteredArticles.ToList();
+    }
+
+    private async Task ToggleFamilyFilter(int familyId)
+    {
+        if (selectedFamilyIds.Contains(familyId))
+        {
+            selectedFamilyIds.Remove(familyId);
+        }
+        else
+        {
+            selectedFamilyIds.Add(familyId);
+        }
+
+        await ApplyFilters();
+    }
+
+    private async Task ToggleSupplierFilter(int supplierId)
+    {
+        if (selectedSupplierIds.Contains(supplierId))
+        {
+            selectedSupplierIds.Remove(supplierId);
+        }
+        else
+        {
+            selectedSupplierIds.Add(supplierId);
+        }
+
+        await ApplyFilters();
+    }
+
+    private async Task UpdateSearchFilter(ChangeEventArgs e)
+    {
+        searchText = e.Value?.ToString() ?? "";
+        await ApplyFilters();
+    }
+
+    private async Task UpdatePriceSorting(ChangeEventArgs e)
+    {
+        priceSortDirection = e.Value?.ToString() ?? "";
+        await ApplyFilters();
+        StateHasChanged();
+    }
+}
+

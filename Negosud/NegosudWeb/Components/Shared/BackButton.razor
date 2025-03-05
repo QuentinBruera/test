@@ -1,0 +1,8 @@
+﻿@code {
+    [Parameter] public EventCallback OnClick { get; set; }
+}
+
+<button class="btn btn-back" @onclick="OnClick">
+    <i class="bi bi-arrow-left"></i> Retour
+</button>
+

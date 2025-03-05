@@ -1,0 +1,79 @@
+﻿<UserControl x:Class="Negosud.Views.DashboardView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Negosud.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="800" d:DesignWidth="1920">
+    <Grid>
+        <DataGrid ItemsSource="{Binding ElementsDashboard}" 
+          AutoGenerateColumns="False" 
+          HorizontalAlignment="Stretch" 
+          VerticalAlignment="Top"
+          Margin="20,50,20,20" 
+          CanUserAddRows="False"
+          HeadersVisibility="Column"
+          Style="{StaticResource CustomDataGridStyle}"
+          RowStyle="{StaticResource CustomDataGridRowStyle}"
+          CellStyle="{StaticResource CustomDataGridCellStyle}">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Article" Binding="{Binding Article.Name}" Width="*">
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="Padding" Value="10,5"/>
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="Nom de domaine" Binding="{Binding SupplierName}" Width="*">
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="Padding" Value="10,5"/>
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="Qté en stock" Binding="{Binding Article.Quantity}" Width="*">
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="Padding" Value="10,5"/>
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTemplateColumn Header="Lancer la commande automatique" Width="*">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Command="{Binding CreatePurchaseRestockingAndRedirectionCommand}" 
+                                    CommandParameter="{Binding Article.Id}" 
+                                    Background="{DynamicResource MainBackgroundColor}" 
+                                    BorderThickness="0"
+                                    Padding="10,5"
+                                    Width="200"
+                                    HorizontalAlignment="Left"
+                                    VerticalAlignment="Center"
+                                    Cursor="Hand"
+                                    Visibility="{Binding DataContext.IsAdminMode, RelativeSource={RelativeSource AncestorType=Window}, Converter={StaticResource BoolToVisibilityConverter}}">
+                                <Button.Content>
+                                    <TextBlock Text="Commander" 
+                                               Foreground="{DynamicResource UnderlineColor}" 
+                                               HorizontalAlignment="Center" 
+                                               VerticalAlignment="Center" />
+                                </Button.Content>
+                                <Button.Template>
+                                    <ControlTemplate TargetType="Button">
+                                        <Border Background="{TemplateBinding Background}"
+                                                CornerRadius="5"
+                                                Padding="{TemplateBinding Padding}">
+                                            <ContentPresenter HorizontalAlignment="Center"
+                                                              VerticalAlignment="Center"
+                                                              Content="{TemplateBinding Content}" />
+                                        </Border>
+                                    </ControlTemplate>
+                                </Button.Template>
+                            </Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</UserControl>

@@ -1,0 +1,23 @@
+﻿<Application x:Class="Negosud.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Negosud"
+             xmlns:views="clr-namespace:Negosud.Views"
+             xmlns:converters="clr-namespace:Negosud.Converters"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <!-- Charge le fichier principal Styles.xaml -->
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Resources/ToggleSvg.xaml" />
+                <ResourceDictionary Source="Styles/Styles.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+            <!-- Enregistrement des converters -->
+            <converters:StatusIdToVisibilityConverter x:Key="StatusIdToVisibilityConverter" />
+            <converters:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter" />
+            <converters:AddressConverter x:Key="AddressConverter" />
+            <converters:MultiVisibilityConverter x:Key="MultiVisibilityConverter" />
+            <converters:AddressConverterSupplier x:Key="AddressConverterSupplier" />
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

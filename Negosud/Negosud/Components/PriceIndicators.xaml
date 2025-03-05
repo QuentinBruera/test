@@ -1,0 +1,45 @@
+﻿<UserControl x:Class="Negosud.Components.PriceIndicators"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="120" d:DesignWidth="400">
+    <Grid HorizontalAlignment="Stretch" VerticalAlignment="Center" >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Total HT -->
+        <Border Grid.Column="0" Style="{StaticResource PriceIndicatorHtBorderStyle}">
+            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                <TextBlock Text="{Binding TotalWithoutTaxes, RelativeSource={RelativeSource AncestorType=UserControl}, StringFormat={}{0:C}, ConverterCulture='fr-FR'}" 
+                           Style="{StaticResource PriceIndicatorValueStyle}"/>
+                <TextBlock Text="Total HT" 
+                           Style="{StaticResource PriceIndicatorLabelStyle}"/>
+            </StackPanel>
+        </Border>
+
+        <!-- TVA -->
+        <Border Grid.Column="1" Style="{StaticResource PriceIndicatorTvaBorderStyle}">
+            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                <TextBlock Text="{Binding TotalTVA, RelativeSource={RelativeSource AncestorType=UserControl}, StringFormat={}{0:C}, ConverterCulture='fr-FR'}" 
+                           Style="{StaticResource PriceIndicatorValueStyle}"/>
+                <TextBlock Text="TVA" 
+                           Style="{StaticResource PriceIndicatorLabelStyle}"/>
+            </StackPanel>
+        </Border>
+
+        <!-- Total TTC -->
+        <Border Grid.Column="2" Style="{StaticResource PriceIndicatorTtcBorderStyle}">
+            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                <TextBlock Text="{Binding TotalWithTaxes, RelativeSource={RelativeSource AncestorType=UserControl}, StringFormat={}{0:C}, ConverterCulture='fr-FR'}" 
+                           Style="{StaticResource PriceIndicatorValueStyle}"/>
+                <TextBlock Text="Total TTC" 
+                           Style="{StaticResource PriceIndicatorLabelStyle}"/>
+            </StackPanel>
+        </Border>
+    </Grid>
+</UserControl>

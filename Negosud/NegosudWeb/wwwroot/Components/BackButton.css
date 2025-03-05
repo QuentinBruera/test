@@ -1,0 +1,7 @@
+﻿.btn-back {
+    background-color: transparent;
+    border: none;
+    color: var(--black);
+    font-size: 24px;
+    cursor: pointer;
+}

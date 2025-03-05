@@ -1,0 +1,32 @@
+﻿<Window x:Class="Negosud.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Negosud"
+        mc:Ignorable="d"
+        xmlns:components="clr-namespace:Negosud.Components"
+        xmlns:viewModels="clr-namespace:Negosud.ViewModels"
+        Title="MainWindow" Width="1920" Height="1080">
+
+    <Window.DataContext>
+        <viewModels:MainViewModel />
+    </Window.DataContext>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        
+        <!-- NavBar -->
+        <components:NavBar DataContext="{Binding}"  Grid.Row="0"/>
+
+        <Grid Grid.Row="1">
+            <Border Background="#861432" Margin="0,-61,0,0" CornerRadius="20,20,0,0">
+                <!-- Contenu principal -->
+                <ContentControl Content="{Binding CurrentView}" />
+            </Border>
+        </Grid>
+    </Grid>
+</Window>

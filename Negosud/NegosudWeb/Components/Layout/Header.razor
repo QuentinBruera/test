@@ -1,0 +1,31 @@
+﻿@rendermode InteractiveServer
+@inject NavigationManager Navigation
+
+
+<header>
+    <div class="container-fluid d-flex justify-content-between align-items-center px-3">
+        <a class="navbar-brand" href="/">
+            <img src="Logo_Negosud.png" alt="Negosud Logo" class="logo">
+        </a>
+
+        <div class="buttons">
+            <button class="btn btn-outline-dark me-2" @onclick="NavigateToLogin">S'identifier</button>
+            <button class="btn btn-outline-dark btn-cart" @onclick="NavigateToCart">
+                <i class="bi bi-cart"></i>
+            </button>
+        </div>
+    </div>
+</header>
+
+@code {
+    private void NavigateToLogin()
+    {
+        Navigation.NavigateTo("/login");
+    }
+
+    private void NavigateToCart()
+    {
+        Navigation.NavigateTo("/cart");
+    }
+}
+

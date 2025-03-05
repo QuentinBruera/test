@@ -1,0 +1,25 @@
+@import "Colors.css";
+@import "Components/BackButton.css";
+@import "Components/Cart.css";
+@import "Components/Detail.css";
+@import "Components/Header.css";
+@import "Components/Home.css";
+
+html, body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bgColor);
+}
+
+main {
+    margin-top: 10px;
+}
+
+.text-xs {
+    font-size: 0.75rem; /* 12px */
+}
+
+

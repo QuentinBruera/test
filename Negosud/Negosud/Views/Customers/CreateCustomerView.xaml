@@ -1,0 +1,52 @@
+﻿<UserControl x:Class="Negosud.Views.CreateCustomerView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Negosud.Views"
+             xmlns:components="clr-namespace:Negosud.Components"
+             mc:Ignorable="d" 
+             d:DesignHeight="1080" d:DesignWidth="1920">
+    <Grid Margin="20">
+        <Grid HorizontalAlignment="Stretch" VerticalAlignment="Top" Margin="20,20,20,0">
+            <StackPanel Orientation="Horizontal" Grid.Column="0" VerticalAlignment="Center">
+                <components:ArrowBack NavigateBackCommand="{Binding DataContext.NavigateBackCommand, RelativeSource={RelativeSource AncestorType=Window}}" />
+                <TextBlock Text="Créer un nouveau client" 
+                           Margin="20,0,0,0"
+                           FontSize="40"
+                           FontWeight="SemiBold"
+                           VerticalAlignment="Center" 
+                           Foreground="{StaticResource PrimaryItemColor}" />
+            </StackPanel>
+        </Grid>
+
+        <Grid HorizontalAlignment="Stretch" Margin="20,150,20,20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            
+            <components:CustomInput Grid.Row="0" Grid.Column="0" Title="Nom" InputValue="{Binding CustomerName, Mode=TwoWay}" HorizontalAlignment="Left" Margin="0,0,0,20" />
+            <components:CustomInput Grid.Row="0" Grid.Column="1" Title="Prénom" InputValue="{Binding CustomerFirstName, Mode=TwoWay}" HorizontalAlignment="Left" />
+            <components:CustomDatePicker Grid.Row="0" Title="Date de naissance" Grid.Column="2" SelectedDate="{Binding CustomerBirthDate, Mode=TwoWay}" HorizontalAlignment="Left" />
+
+            <components:CustomInput Grid.Row="1" Grid.Column="0" Title="Rue" InputValue="{Binding CustomerStreet, Mode=TwoWay}" HorizontalAlignment="Left" Margin="0,0,0,20" />
+            <components:CustomInput Grid.Row="1" Grid.Column="1" Title="Code postal" InputValue="{Binding CustomerZipCode, Mode=TwoWay}" HorizontalAlignment="Left" />
+            <components:CustomInput Grid.Row="1" Grid.Column="2" Title="Ville" InputValue="{Binding CustomerCity, Mode=TwoWay}" HorizontalAlignment="Left" />
+
+            <components:CustomInput Grid.Row="2" Grid.Column="0" Title="Téléphone portable" InputValue="{Binding CustomerCellPhone, Mode=TwoWay}" HorizontalAlignment="Left" />
+            <components:CustomInput Grid.Row="2" Grid.Column="1" Title="Téléphone fixe" InputValue="{Binding CustomerLandline, Mode=TwoWay}" HorizontalAlignment="Left" />
+
+            <StackPanel Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,100,0,0">
+                <components:ButtonValidateLong Command="{Binding ValidateCommand}" Margin="0,0,50,0" />
+            </StackPanel>
+        </Grid>
+    </Grid>
+</UserControl>

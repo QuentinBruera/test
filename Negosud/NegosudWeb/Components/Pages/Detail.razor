@@ -1,0 +1,107 @@
+﻿@page "/detail/{articleId:int}"
+@rendermode InteractiveServer
+
+@using NegosudWeb.Services
+@using NegosudModel.Dto
+
+@inject NavigationManager Navigation
+@inject ArticleService ArticleService
+@inject CartService CartService
+
+<PageTitle>Détail de l'article</PageTitle>
+
+<div class="cart-main">
+    @if (article is null)
+    {
+        <p class="text-center">Chargement en cours...</p>
+    }
+    else
+    {
+        <div class="d-flex align-content-center">
+            <div class="col-4">
+                <NegosudWeb.Components.Shared.BackButton OnClick="GoBack" />
+            </div>
+            <div class="col-4">
+                <div class="d-flex justify-content-center">
+                    <h3 class="cart-title text-uppercase text-center">@article.Name</h3>
+                    @if (itemsInCart.ContainsKey(article.Id) && itemsInCart[article.Id])
+                    {
+                        <i class="bi bi-cart-check text-success mx-2"></i>
+                    }
+                </div>
+            </div>
+            <div class="col-4"></div>
+        </div>
+
+        <div class="cart-body">
+            <div class="d-flex flex-column">
+                <div class="d-flex">
+                    <div class="col-4"></div>
+                    <div class="col-4 article-detail">
+                        <div class="d-flex flex-column">
+                            <span>@article.Description</span>
+                            <span>@article.Supplier?.Name</span>
+                            <span>Quantité disponible : @article.Quantity</span>
+                            <span><strong>@($"{CartService.GetUnitPriceTTC(article):F2}") €</strong> l'unité</span>
+                            <div class="d-flex gap-2 mt-4">
+                                <input type="number" value="@selectedQuantity" min="1" @oninput="@(e => UpdateQuantity(e.Value?.ToString()))" class="form-control text-center fw-bold input-red-border w-25" />
+                                <span class="fw-bold d-flex align-items-center">TOTAL : @($"{totalPrice:F2}") €</span>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column detail-total">
+                            <div>
+                                <button class="btn btn-cart-buy fs-4" @onclick="AddToCart"> Ajouter au panier</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4"></div>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+@code {
+    [Parameter] public int articleId { get; set; }
+    private ArticleDetailsDto? article;
+    private int selectedQuantity = 1;
+    private decimal totalPrice = 0m;
+    private Dictionary<int, bool> itemsInCart = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        article = await ArticleService.GetArticleByIdAsync(articleId);
+        if (article != null)
+        {
+            itemsInCart[article.Id] = CartService.IsInCart(article.Id);
+            totalPrice = CartService.GetUnitPriceTTC(article) * selectedQuantity;
+        }
+    }
+
+    private void UpdateQuantity(string? quantityStr)
+    {
+        if (int.TryParse(quantityStr, out int newQuantity) && newQuantity >= 1)
+        {
+            selectedQuantity = newQuantity;
+            totalPrice = CartService.GetUnitPriceTTC(article) * selectedQuantity;
+        }
+        else
+        {
+            selectedQuantity = 1;
+        }
+    }
+
+    private void AddToCart()
+    {
+        if (article is not null)
+        {
+            CartService.AddToCart(article, selectedQuantity);
+            itemsInCart[article.Id] = true;
+        }
+    }
+
+    private void GoBack()
+    {
+        Navigation.NavigateTo("/");
+    }
+}

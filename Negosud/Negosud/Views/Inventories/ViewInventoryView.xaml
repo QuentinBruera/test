@@ -1,0 +1,69 @@
+﻿<UserControl x:Class="Negosud.Views.ViewInventoryView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Negosud.Views"
+             xmlns:components="clr-namespace:Negosud.Components"
+             mc:Ignorable="d" 
+             d:DesignHeight="1080" d:DesignWidth="1920">
+    <Grid>
+        <Grid HorizontalAlignment="Stretch" VerticalAlignment="Top" Margin="20,20,20,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="2*" />
+                <ColumnDefinition Width="1*" />
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Orientation="Horizontal" Grid.Column="0" VerticalAlignment="Center">
+                <components:ArrowBack NavigateBackCommand="{Binding DataContext.NavigateBackCommand, RelativeSource={RelativeSource AncestorType=Window}}" />
+                <TextBlock Text="{Binding Inventory.Id, StringFormat='Inventaire n° {0}'}" 
+                           Margin="20,0,0,0"
+                           FontSize="40"
+                           FontWeight="SemiBold"
+                           VerticalAlignment="Center" 
+                           Foreground="{StaticResource PrimaryItemColor}" />
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <components:CustomDatePicker Title="Du" SelectedDate="{Binding Inventory.Date}" IsEnabled="False" />
+            </StackPanel>
+        </Grid>
+
+        <DataGrid ItemsSource="{Binding ArticleInventories}"
+                  AutoGenerateColumns="False"
+                  HorizontalAlignment="Stretch"
+                  VerticalAlignment="Top"
+                  Margin="20,150,20,20"
+                  CanUserAddRows="False"
+                  HeadersVisibility="Column"
+                  IsReadOnly="True"
+                  Style="{StaticResource CustomDataGridStyle}"
+                  RowStyle="{StaticResource CustomDataGridRowStyle}"
+                  CellStyle="{StaticResource CustomDataGridCellStyle}">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Article" Binding="{Binding ArticleName}"  Width="3*">
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="Padding" Value="10,5"/>
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="Ancien stock" Binding="{Binding QuantityBefore}" Width="2*">
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="Padding" Value="10,5"/>
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="Nouveau stock" Binding="{Binding QuantityAfter}" Width="2*">
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="Padding" Value="10,5"/>
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</UserControl>

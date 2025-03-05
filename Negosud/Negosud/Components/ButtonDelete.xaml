@@ -1,0 +1,39 @@
+﻿<UserControl x:Class="Negosud.Components.ButtonDelete"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Negosud.Components"
+             mc:Ignorable="d" 
+             d:DesignHeight="40" d:DesignWidth="40">
+    <Grid>
+        <Button ToolTip="Supprimer"
+                Command="{Binding DeleteCommand, RelativeSource={RelativeSource AncestorType=UserControl}}"
+                CommandParameter="{Binding CommandParameter, RelativeSource={RelativeSource AncestorType=UserControl}}"
+                Cursor="Hand"
+                Width="35" Height="35"
+                Background="Transparent"
+                BorderThickness="0">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Grid Background="Transparent">
+                        <Grid.Effect>
+                            <DropShadowEffect BlurRadius="1" 
+                                             ShadowDepth="0" 
+                                             Opacity="0.6" 
+                                             Color="Black"/>
+                        </Grid.Effect>
+                        <Viewbox Width="22" Height="22" Margin="0,0,0,2" HorizontalAlignment="Center" VerticalAlignment="Center">
+                            <Path Data="M19.3167 12.2509L18.74 27.2509M10.76 27.2509L10.1833 12.2509M26.7967 6.90087C27.3667 6.98754 27.9333 7.0792 28.5 7.17754M26.7967 6.90087L25.0167 30.0392C24.944 30.9812 24.5184 31.8611 23.825 32.5029C23.1316 33.1448 22.2215 33.5011 21.2767 33.5009H8.22333C7.27849 33.5011 6.36837 33.1448 5.67497 32.5029C4.98156 31.8611 4.55598 30.9812 4.48333 30.0392L2.70333 6.90087M26.7967 6.90087C24.8731 6.61006 22.9396 6.38936 21 6.2392M2.70333 6.90087C2.13333 6.98587 1.56667 7.07754 1 7.17587M2.70333 6.90087C4.62689 6.61007 6.56039 6.38937 8.5 6.2392M21 6.2392V4.71254C21 2.74587 19.4833 1.10587 17.5167 1.0442C15.6727 0.985266 13.8273 0.985266 11.9833 1.0442C10.0167 1.10587 8.5 2.74754 8.5 4.71254V6.2392M21 6.2392C16.8395 5.91766 12.6605 5.91766 8.5 6.2392"
+                                  Stroke="{DynamicResource MainBackgroundColor}"
+                                  StrokeThickness="1.5"
+                                  StrokeStartLineCap="Round"
+                                  StrokeEndLineCap="Round"
+                                  StrokeLineJoin="Round"/>
+                        </Viewbox>
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+    </Grid>
+</UserControl>

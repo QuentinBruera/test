@@ -1,0 +1,90 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <SolidColorBrush x:Key="SelectionBoxItemOpaque" Color="#E4E3DD" Opacity="0.95" />
+
+    <Style x:Key="CustomDatePickerStyle" TargetType="DatePicker">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="DatePicker">
+                    <Grid>
+                        <Border Background="{StaticResource SelectionBoxItemOpaque}"
+                                BorderThickness="1"
+                                CornerRadius="10"
+                                Padding="5"
+                                Height="45"
+                                Width="280">
+                            <Border.Effect>
+                                <DropShadowEffect Color="Black"
+                                                  ShadowDepth="4"
+                                                  Opacity="0.25"
+                                                  BlurRadius="4" />
+                            </Border.Effect>
+                            <Grid>
+                                <!-- Zone de texte pour afficher la date -->
+                                <TextBox x:Name="PART_TextBox"
+                                         FontSize="20"
+                                         VerticalContentAlignment="Center"
+                                         Foreground="Black"
+                                         BorderThickness="0"
+                                         Background="Transparent"
+                                         IsReadOnly="True"
+                                         Margin="10,0,40,0"
+                                         Text="{Binding SelectedDate, RelativeSource={RelativeSource TemplatedParent}, StringFormat=dd/MM/yyyy}" />
+
+                                <!-- Bouton pour ouvrir le calendrier -->
+                                <Button x:Name="PART_Button"
+                                        Width="40"
+                                        Height="40"
+                                        HorizontalAlignment="Right"
+                                        VerticalAlignment="Center"
+                                        Background="Transparent"
+                                        BorderBrush="Transparent"
+                                        Cursor="Hand">
+                                    <Grid>
+                                        <Rectangle Fill="Transparent" />
+                                        <Path Data="M8.4375 3.75V6.5625M21.5625 3.75V6.5625M3.75 23.4375V9.375C3.75 8.62908 4.04632 7.91371 4.57376 7.38626C5.10121 6.85882 5.81658 6.5625 6.5625 6.5625H23.4375C24.1834 6.5625 24.8988 6.85882 25.4262 7.38626C25.9537 7.91371 26.25 8.62908 26.25 9.375V23.4375M3.75 23.4375C3.75 24.1834 4.04632 24.8988 4.57376 25.4262C5.10121 25.9537 5.81658 26.25 6.5625 26.25H23.4375C24.1834 26.25 24.8988 25.9537 25.4262 25.4262C25.9537 24.8988 26.25 24.1834 26.25 23.4375M3.75 23.4375V14.0625C3.75 13.3166 4.04632 12.6012 4.57376 12.0738C5.10121 11.5463 5.81658 11.25 6.5625 11.25H23.4375C24.1834 11.25 24.8988 11.5463 25.4262 12.0738C25.9537 12.6012 26.25 13.3166 26.25 14.0625V23.4375"
+                                              Stroke="Black"
+                                              StrokeThickness="1.5"
+                                              StrokeStartLineCap="Round"
+                                              StrokeEndLineCap="Round"
+                                              StrokeLineJoin="Round"
+                                              HorizontalAlignment="Center"
+                                              VerticalAlignment="Center"
+                                              Margin="-10,-2,0,0" />
+                                    </Grid>
+                                    <Button.Style>
+                                        <Style TargetType="Button">
+                                            <Setter Property="OverridesDefaultStyle" Value="True" />
+                                            <Setter Property="FocusVisualStyle" Value="{x:Null}" />
+                                            <Setter Property="Template">
+                                                <Setter.Value>
+                                                    <ControlTemplate TargetType="Button">
+                                                        <ContentPresenter />
+                                                    </ControlTemplate>
+                                                </Setter.Value>
+                                            </Setter>
+                                        </Style>
+                                    </Button.Style>
+                                </Button>
+                            </Grid>
+                        </Border>
+
+                        <!-- Popup pour le calendrier déroulant -->
+                        <Popup x:Name="PART_Popup"
+                               Placement="Bottom"
+                               StaysOpen="False"                              
+                               AllowsTransparency="True">
+                            <Border Background="White"
+                                    BorderThickness="1"
+                                    CornerRadius="10">
+                                <Calendar x:Name="PART_Calendar"
+                                          SelectedDate="{Binding SelectedDate, RelativeSource={RelativeSource TemplatedParent}, Mode=TwoWay}" />
+                            </Border>
+                        </Popup>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

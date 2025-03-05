@@ -1,0 +1,41 @@
+﻿<UserControl x:Class="Negosud.Components.ButtonEdit"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             mc:Ignorable="d"
+             d:DesignHeight="40" d:DesignWidth="40">
+    <Grid>
+        <Button ToolTip="Modifier"
+                Command="{Binding NavigateCommand, RelativeSource={RelativeSource AncestorType=UserControl}}"
+                CommandParameter="{Binding CommandParameter, RelativeSource={RelativeSource AncestorType=UserControl}}"
+                Cursor="Hand"
+                Width="35" Height="35"
+                VerticalAlignment="Center"
+                Background="Transparent"
+                BorderThickness="0">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Grid Background="Transparent">
+                        <Viewbox Width="27" Height="27" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center">
+                            <Grid>
+                                <Grid.Effect>
+                                    <DropShadowEffect BlurRadius="1" 
+                                                      ShadowDepth="0" 
+                                                      Opacity="0.6" 
+                                                      Color="Black"/>
+                                </Grid.Effect>
+                                <Path Data="M28.1033 7.47832L30.915 4.66498C31.5011 4.07886 32.2961 3.74957 33.125 3.74957C33.9539 3.74957 34.7489 4.07886 35.335 4.66498C35.9211 5.25111 36.2504 6.04607 36.2504 6.87498C36.2504 7.7039 35.9211 8.49886 35.335 9.08499L11.3867 33.0333C10.5055 33.9139 9.41894 34.5612 8.225 34.9167L3.75 36.25L5.08333 31.775C5.4388 30.581 6.08606 29.4944 6.96667 28.6133L28.105 7.47832H28.1033ZM28.1033 7.47832L32.5 11.875"
+                                      Stroke="{DynamicResource InventoryColor}"
+                                      StrokeThickness="1.5"
+                                      StrokeStartLineCap="Round"
+                                      StrokeEndLineCap="Round"
+                                      StrokeLineJoin="Round"/>
+                            </Grid>
+                        </Viewbox>
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+    </Grid>
+</UserControl>

@@ -1,0 +1,134 @@
+﻿<UserControl x:Class="Negosud.Views.ViewPurchaseView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:Negosud.Views"
+             xmlns:components="clr-namespace:Negosud.Components"
+             mc:Ignorable="d"
+             d:DesignHeight="1080" d:DesignWidth="1920">
+    <Grid>
+        <Grid HorizontalAlignment="Stretch" VerticalAlignment="Top" Margin="20,20,20,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="2*" />
+                <ColumnDefinition Width="1*" />
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Orientation="Horizontal" Grid.Column="0" VerticalAlignment="Center">
+                <components:ArrowBack NavigateBackCommand="{Binding DataContext.NavigateBackCommand, RelativeSource={RelativeSource AncestorType=Window}}" />
+                <TextBlock Text="{Binding Purchase.Id, StringFormat='Commande n° {0}'}" 
+                           Margin="20,0,0,0"
+                           FontSize="40"
+                           FontWeight="SemiBold"
+                           VerticalAlignment="Center"
+                           Foreground="{StaticResource PrimaryItemColor}" />
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <components:PriceIndicators TotalWithoutTaxes="{Binding TotalWithoutTaxes}" 
+                                            TotalTVA="{Binding TotalTVA}" 
+                                            TotalWithTaxes="{Binding TotalWithTaxes}" 
+                                            Margin="0,20,0,0" />
+            </StackPanel>
+
+            <StackPanel Grid.Column="2" HorizontalAlignment="Right" VerticalAlignment="Center">
+                <Button Command="{Binding ReceivePurchaseCommand}" 
+                        Visibility="{Binding IsReceiveButtonVisible, Converter={StaticResource BoolToVisibilityConverter}}"
+                        ToolTip="Réceptionner"
+                        Style="{StaticResource ButtonValidateStyle}">
+                    <Viewbox Width="40" Height="40" VerticalAlignment="Center" HorizontalAlignment="Center">
+                        <Grid>
+                            <Ellipse Fill="Transparent" />
+                            <Path Data="M26.25 37.1875L32.8125 43.75L43.75 28.4375M61.25 35C61.25 38.4472 60.571 41.8606 59.2518 45.0454C57.9327 48.2302 55.9991 51.124 53.5616 53.5616C51.124 55.9991 48.2302 57.9327 45.0454 59.2518C41.8606 60.571 38.4472 61.25 35 61.25C31.5528 61.25 28.1394 60.571 24.9546 59.2518C21.7698 57.9327 18.876 55.9991 16.4384 53.5616C14.0009 51.124 12.0673 48.2302 10.7482 45.0454C9.42898 41.8606 8.75 38.4472 8.75 35C8.75 28.0381 11.5156 21.3613 16.4384 16.4384C21.3613 11.5156 28.0381 8.75 35 8.75C41.9619 8.75 48.6387 11.5156 53.5616 16.4384C58.4844 21.3613 61.25 28.0381 61.25 35Z"
+                                  Stroke="White"
+                                  StrokeThickness="2"
+                                  Fill="Transparent"
+                                  Stretch="Uniform" />
+                        </Grid>
+                    </Viewbox>
+                </Button>
+
+            </StackPanel>
+        </Grid>
+
+        <Grid HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,160,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="30" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <components:CustomDatePicker Title="Date de commande" SelectedDate="{Binding Purchase.Date}" IsEnabled="False" Grid.Column="0" />
+
+            <StackPanel Grid.Column="2">
+                <TextBlock Text="Fournisseur" Style="{StaticResource CustomTitleStyle}" />
+                <Border Background="{StaticResource SelectionBoxItemOpaque}"
+                        BorderBrush="Gray"
+                        BorderThickness="1"
+                        CornerRadius="10"
+                        Padding="5"
+                        Height="45"
+                        Width="280"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center">
+                    <TextBlock Text="{Binding SupplierName}"
+                               VerticalAlignment="Center"
+                               HorizontalAlignment="Left"
+                               Margin="10,0,0,0"
+                               FontSize="20"
+                               Foreground="Black" />
+                </Border>
+            </StackPanel>
+        </Grid>
+
+        <DataGrid ItemsSource="{Binding ArticleOrders}" 
+                  AutoGenerateColumns="False" 
+                  HorizontalAlignment="Stretch" 
+                  VerticalAlignment="Top"
+                  Margin="20,300,20,20" 
+                  CanUserAddRows="False"
+                  HeadersVisibility="Column"
+                  Style="{StaticResource CustomDataGridStyle}"
+                  RowStyle="{StaticResource CustomDataGridRowStyle}"
+                  CellStyle="{StaticResource CustomDataGridCellStyle}">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Article" Binding="{Binding ArticleName}" Width="3*">
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="Padding" Value="10,0" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="Quantité" Binding="{Binding Quantity}" Width="2*">
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="Padding" Value="10,0" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="Prix unitaire" Binding="{Binding UnitPrice, StringFormat={}{0:C}, ConverterCulture='fr-FR'}" IsReadOnly="True" Width="2*">
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="Padding" Value="10,0" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="Montant HT" Binding="{Binding TotalWithoutTaxes, StringFormat={}{0:C}, ConverterCulture='fr-FR'}" IsReadOnly="True" Width="2*">
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="Padding" Value="10,0" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="Montant TTC" Binding="{Binding TotalWithTaxes, StringFormat={}{0:C}, ConverterCulture='fr-FR'}" IsReadOnly="True" Width="2*">
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="Padding" Value="10,0" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</UserControl>
